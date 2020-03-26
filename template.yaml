@@ -44,8 +44,6 @@ Resources:
                   - logs:CreateLogGroup
                   - logs:CreateLogStream
                   - logs:PutLogEvents
-                  # - sts:*
-                  # - ses:*
                 Resource: "*"
                 Effect: Allow
               - Resource:
