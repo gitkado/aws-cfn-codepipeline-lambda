@@ -122,6 +122,9 @@ Resources:
               - Resource: "arn:aws:iam::*:role/*"
                 Effect: Allow
                 Action:
+                  - iam:DetachRolePolicy
+                  - iam:AttachRolePolicy
+                  - iam:PutRolePolicy
                   - iam:GetRole
                   - iam:CreateRole
                   - iam:CreateRolePolicy
@@ -131,11 +134,6 @@ Resources:
                 Effect: Allow
                 Action:
                   - cloudformation:CreateChangeSet
-              - Resource: "arn:aws:iam::*:role/*"
-                Effect: Allow
-                Action:
-                  - iam:DetachRolePolicy
-                  - iam:AttachRolePolicy
               - Resource: "arn:aws:logs:*:*:*"
                 Effect: Allow
                 Action:
